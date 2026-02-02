@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<img width="1906" height="841" alt="image" src="https://github.com/user-attachments/assets/8059b82c-adb2-4c14-8726-4018aa4a35f0" />First, run the development server:- npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Below is the attached UI for landing page and here 
+<img width="1906" height="841" alt="image" src="https://github.com/user-attachments/assets/b37f1d5a-28af-4be6-8052-a92fba9cde70" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is a Books Library application built with Next.js. It demonstrates the difference and interaction between **Server Components** and **Client Components** in a modern Next.js application.  
 
-## Learn More
+- **Server Components**: Fetch and render data on the server for better performance, SEO, and faster initial load.  
+- **Client Components**: Handle interactive UI features like filtering and sorting without a full page reload.  
 
-To learn more about Next.js, take a look at the following resources:
+This project shows how you can 
+1. Display Books  
+   - A list of books with title, author, genre, and rating.
+   - Book data is fetched/rendered on the server (Server Component).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Interactive Filter & Sort**  
+   - Users can filter books by genre and sort by rating.
+   - Filtering and sorting are handled on the client (Client Component) using React `useState`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Separation of Concerns**  
+   - Server Component (`BookList.tsx`) handles data rendering.
+   - Client Component (`BookFilter.tsx`) handles UI interactivity.
+   
+combine server-side data fetching with client-side interactivity, a key feature in Next.js 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
